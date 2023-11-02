@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLayoutEffect } from 'react';
 import SplitType from 'split-type';
 import { Typography, styled } from '@mui/material';
+import { SectionWrapper } from '../StyledComponents/sectionWrapper';
 
 const TextReveal = () => {
   useLayoutEffect(() => {
@@ -35,7 +36,7 @@ const TextReveal = () => {
   }, []);
 
   return (
-    <TextRevealWrapper className="text-reveal">
+    <SectionWrapper className="text-reveal">
       <Typography variant="large" width={'60%'} className="reveal-type">
         Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
@@ -43,15 +44,8 @@ const TextReveal = () => {
         Curabitur tempus urna at turpis condimentum lobortis. Ut commodo
         efficitur neque.
       </Typography>
-    </TextRevealWrapper>
+    </SectionWrapper>
   );
 };
-
-const TextRevealWrapper = styled('div')(({ theme }) => ({
-  height: '100vh',
-  display: 'flex',
-  justifyContent: 'flex-start',
-  alignItems: 'center',
-}));
 
 export default TextReveal;

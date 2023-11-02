@@ -7,7 +7,7 @@ import LandingPage from './pages/LandingPage';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#A495FD',
+      main: '#7053FF',
     },
     secondary: {
       main: '#A495FD',
@@ -71,7 +71,7 @@ const theme = createTheme({
     },
     label: {
       fontFamily: 'Montserrat',
-      fontSize: '13px',
+      fontSize: '15px',
       fontWeight: 600,
     },
   },
@@ -97,8 +97,9 @@ function App() {
 }
 
 const AppContainer = styled('div')(({ theme }) => ({
-  padding: '0 120px',
+  padding: '0',
   margin: '0 auto',
+  overflowX: 'hidden',
 
   '@media (max-width: 768px)': {
     padding: '0 16px',

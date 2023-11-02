@@ -1,6 +1,7 @@
 import { Stack, Typography, styled } from '@mui/material';
 import React, { useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import { SectionWrapper } from '../StyledComponents/sectionWrapper';
 
 const Parallax = () => {
   const cardRef = useRef(null);
@@ -41,7 +42,7 @@ const Parallax = () => {
   };
 
   return (
-    <ParallaxSectionWrapper>
+    <SectionWrapper>
       <Stack width={'35%'} gap={2}>
         <Typography variant="body" color={'primary.main'}>
           Mobile experience
@@ -72,16 +73,9 @@ const Parallax = () => {
           }}
         />
       </CardContainer>
-    </ParallaxSectionWrapper>
+    </SectionWrapper>
   );
 };
-
-const ParallaxSectionWrapper = styled('div')(({ theme }) => ({
-  height: '100vh',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-}));
 
 const CardContainer = styled('div')(({ theme }) => ({
   display: 'flex',
