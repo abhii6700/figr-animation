@@ -3,6 +3,7 @@ import Lenis from '@studio-freight/lenis';
 import { useRef } from 'react';
 import './index.css';
 import LandingPage from './pages/LandingPage';
+import MouseContextProvider from './context/mouseContext';
 
 const theme = createTheme({
   palette: {
@@ -89,9 +90,11 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppContainer>
-        <LandingPage />
-      </AppContainer>
+      <MouseContextProvider>
+        <AppContainer>
+          <LandingPage />
+        </AppContainer>
+      </MouseContextProvider>
     </ThemeProvider>
   );
 }

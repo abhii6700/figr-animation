@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useContext, useLayoutEffect } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Button, Stack, Typography, styled } from '@mui/material';
 import { gsap } from 'gsap';
@@ -6,8 +6,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import { SectionWrapper } from '../StyledComponents/sectionWrapper';
 import Frame from '../../assets/images/Frame.webp';
+import '../../index.css';
+import CustomCursor from '../CustomCursor';
+import { MouseContext } from '../../context/mouseContext';
 
 const HeroSection = () => {
+  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -26,10 +31,19 @@ const HeroSection = () => {
         animation: tween,
       });
   }, []);
+
   return (
     <SectionWrapper>
-      <div></div>
-      <Container className="container">
+      <CustomCursor />
+      <Container
+        className="container"
+        id="container"
+        onMouseEnter={() => {
+          cursorChangeHandler('show');
+        }}
+        onMouseLeave={() => cursorChangeHandler('')}
+        style={{ cursor: 'none' }}
+      >
         <Stack width={'50%'} gap={2}>
           <CustomButton
             variant="contained"
@@ -61,6 +75,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
   borderRadius: '24px',
   width: 'fit-content',
   color: 'white',
+  cursor: 'none',
 
   '.button-arrow': {
     transition: 'all 0.8s ease-out',
