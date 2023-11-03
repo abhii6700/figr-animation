@@ -27,7 +27,7 @@ const TextReveal = () => {
           trigger: splitTypes,
           start: 'top 20%',
           end: 'top 10%',
-          scrub: 1,
+          scrub: true,
           pin: '.text-reveal',
           pinSpacing: false,
           toggleActions: 'play play reverse reverse',
