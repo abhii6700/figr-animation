@@ -38,12 +38,7 @@ const TextReveal = () => {
 
   return (
     <SectionWrapper className="text-reveal">
-      <Typography
-        variant="large"
-        width={'60%'}
-        height={'100vh'}
-        className="reveal-type"
-      >
+      <Typography variant="large" width={'60%'} className="reveal-type">
         Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
         sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.

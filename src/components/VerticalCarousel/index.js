@@ -72,7 +72,6 @@ const RoundedCardsContainer = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   width: '505px',
-  height: '100vh',
   position: 'relative',
   gap: '24px',
 }));
