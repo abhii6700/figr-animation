@@ -20,7 +20,7 @@ const VerticalCarousel = () => {
           scrub: true,
           pin: true,
           pinSpacing: false, // Change this to false or adjust as needed
-          end: '+=2000',
+          end: '+=800',
         },
       })
       .to('.card-1', { opacity: 0 })
@@ -32,7 +32,7 @@ const VerticalCarousel = () => {
   }, []);
 
   return (
-    <SectionWrapper ref={cardContainer}>
+    <SectionWrapper ref={cardContainer} style={{ height: '200vh' }}>
       <Stack width={'40%'} gap={2}>
         <Typography variant="body" color={'primary.main'}>
           Workflow
