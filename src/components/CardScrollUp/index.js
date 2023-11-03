@@ -111,7 +111,7 @@ const CardScrollUpWrapper = styled('div')(({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  overflowX: 'hidden',
+  overflow: 'hidden',
   padding: 0,
 }));
 

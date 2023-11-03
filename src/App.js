@@ -74,6 +74,9 @@ const theme = createTheme({
       fontFamily: 'Montserrat',
       fontSize: '15px',
       fontWeight: 600,
+      '@media (max-width:1450px)': {
+        fontSize: '11px',
+      },
     },
   },
 });

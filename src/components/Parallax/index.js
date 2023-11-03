@@ -18,9 +18,9 @@ const Parallax = () => {
     const xOffset = (cursorX - cardCenterX) / 10;
     const yOffset = (cursorY - cardCenterY) / 10;
 
-    // Limit the maximum rotation to 2 degrees
+    // Limit the maximum rotation
     const maxXRotation = Math.min(10, Math.max(-10, xOffset));
-    const maxYRotation = Math.min(2, Math.max(-2, yOffset));
+    const maxYRotation = Math.min(3, Math.max(-2, yOffset));
 
     gsap.to(card, {
       rotationX: -maxYRotation, // Tilt on X-axis
