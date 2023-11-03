@@ -20,7 +20,7 @@ const VerticalCarousel = () => {
           scrub: true,
           pin: true,
           pinSpacing: false, // Change this to false or adjust as needed
-          end: '+=800',
+          end: 'top 100%',
         },
       })
       .to('.card-1', { opacity: 0 })

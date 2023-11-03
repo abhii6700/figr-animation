@@ -21,11 +21,11 @@ const TextReveal = () => {
       },
       {
         color: '#FFFFFF',
-        duration: 0.3,
+        duration: 0.8,
         stagger: 0.02,
         scrollTrigger: {
           trigger: splitTypes,
-          start: 'top 40%',
+          start: 'top 20%',
           end: 'top 10%',
           scrub: 1,
           pin: '.text-reveal',
