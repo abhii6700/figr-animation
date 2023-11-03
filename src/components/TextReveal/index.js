@@ -25,7 +25,7 @@ const TextReveal = () => {
         stagger: 0.02,
         scrollTrigger: {
           trigger: splitTypes,
-          start: 'top 20%',
+          start: 'top 10%',
           end: '+=800',
           scrub: true,
           pin: '.text-reveal',
