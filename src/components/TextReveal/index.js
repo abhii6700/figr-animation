@@ -25,8 +25,8 @@ const TextReveal = () => {
         stagger: 0.02,
         scrollTrigger: {
           trigger: splitTypes,
-          start: 'top 10%',
-          end: '+=800',
+          start: 'top 20%',
+          end: '+=600',
           scrub: true,
           pin: '.text-reveal',
           toggleActions: 'play play reverse reverse',

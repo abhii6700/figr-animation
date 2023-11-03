@@ -72,7 +72,7 @@ const theme = createTheme({
     },
     label: {
       fontFamily: 'Montserrat',
-      fontSize: '15px',
+      fontSize: '13px',
       fontWeight: 600,
       '@media (max-width:1450px)': {
         fontSize: '11px',
